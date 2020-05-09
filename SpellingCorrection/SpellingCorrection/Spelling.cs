@@ -8,7 +8,7 @@ namespace SpellingCorrector
 {
     public class Spelling
     {
-        private Dictionary<String, int> _dictionary = new Dictionary<String, int>();
+        private Dictionary<string, int> _dictionary = new Dictionary<string, int>();
         private static Regex _wordRegex = new Regex("[a-z]+", RegexOptions.Compiled);
 
         public Spelling()
@@ -40,7 +40,7 @@ namespace SpellingCorrector
             if (_dictionary.ContainsKey(word))
                 return word;
 
-            List<String> list = Edits(word);
+            List<string> list = Edits(word);
             Dictionary<string, int> candidates = new Dictionary<string, int>();
 
             foreach (string wordVariation in list)
