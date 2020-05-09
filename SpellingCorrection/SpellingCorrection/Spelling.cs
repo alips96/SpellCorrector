@@ -6,9 +6,6 @@ using System.Text.RegularExpressions;
 
 namespace SpellingCorrector
 {
-    /// <summary>
-    /// Conversion from http://norvig.com/spell-correct.html by C.Small
-    /// </summary>
     public class Spelling
     {
         private Dictionary<String, int> _dictionary = new Dictionary<String, int>();
